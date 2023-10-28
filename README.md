@@ -1,4 +1,4 @@
-# Trabajo practico
+# Trabajo practico 2
 ## Frontend Javascript
 
 ### Lista de tareas del proyecto
