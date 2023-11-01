@@ -1,0 +1,58 @@
+/* Navbar */
+
+.navbar {
+    padding: 0;
+}
+
+.favicon {
+    margin-left: 50px;
+    padding: 5px;
+    width: 80px;
+    height: 70px;
+}
+
+.btn-verde {
+    background-color: #299042;
+}
+
+/* Carousel */
+
+.carousel-caption {
+    padding: 0;
+    margin-bottom: 50px;
+    margin-right: -100px;
+}
+
+.carousel-caption h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.comprarVerde {
+    color: #2fc950;
+}
+
+/* cards */
+
+.container-cards {
+    background-color: #f5f6f7;
+
+}
+
+.container-oradores .card {
+    margin: 20px;
+
+}
+
+/* Formulario */ 
+.buttom-form {
+    background-color: #96C93E;
+}
+/* Footer */
+
+.footer {
+    background: rgb(28,56,70);
+background: linear-gradient(90deg, rgba(28,56,70,0.9528186274509804) 3%, rgba(29,73,98,1) 25%, rgba(29,67,88,1) 95%);
+}
+
+/* M Q */
