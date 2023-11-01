@@ -1,199 +1,230 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <!--Metadatos-->
-    <meta charset="UTF-8">
-    <meta name="author" content="Cesar Alfonso Escalona Rodriguez">
-    <meta name="description" content="Pagina de una conferencia en buenos aires a modo de ejemplo como final integrador frontend de codo a codo">
-    <meta name="keywords" content="HTML, CSS, Bootstrap, Conferencia, Buenos Aires, Argentina, Ejercicio, Frontend">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- bootstrap -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <!-- css -->
-    <link rel="stylesheet" href="assets/css/style.css">
+	<!--Metadatos-->
+	<meta charset="UTF-8">
+	<meta name="author" content="Cesar Alfonso Escalona Rodriguez">
+	<meta name="description"
+		content="Pagina de una conferencia en buenos aires a modo de ejemplo como final integrador frontend de codo a codo">
+	<meta name="keywords" content="HTML, CSS, Bootstrap, Conferencia, Buenos Aires, Argentina, Ejercicio, Frontend">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+	<!-- css -->
+	<link rel="stylesheet" href="assets/css/style.css">
 	<!-- Favicon -->
 	<link rel="icon" type="image/x-icon" href="assets/img/codoacodo.png">
-  <!-- Titulo -->
-    <title>Conferencia Buenos Aires</title>
-    
+	<!-- Titulo -->
+	<title>Conferencia Buenos Aires</title>
+
 </head>
+
 <body>
-  <!-- Navbar -->
-		<nav id="navbar" class="navbar navbar-expand-md bg-black opacity-75 navbar-main">
-			<div class="container-fluid">
-				<a class="navbar-brand-md text-white d-flex align-items-center text-decoration-none fs-5" href="#">
-					<img id="favicon" class="favicon" src="assets/img/codoacodo.png" alt="Logo">
-			<h2>Conferencia de Buenos Aires</h2>
-				</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button> 
-				<div class="collapse navbar-collapse flex-md-row-reverse fw-normal" id="mainNav">
-					<div class="nav flex-column flex-md-row fw-medium">
-						<a class="nav-link text-white" aria-current="page" href="#">Conferencia</a>
-						<a class="nav-link text-white-50" href="#">Oradores</a>
-						<a class="nav-link text-white-50" href="#">Lugar y fecha</a>
-						<a class="nav-link text-white-50" href="#">Convierte en orador</a>
-						<a class="nav-link comprarVerde fw-semibold" href="#">Comprar tickets</a>
-					</div>
-				</div>
-			</div>
-		</nav>
-  <!-- Carousel -->
-		<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img src="assets/img/ba1.jpg" class="d-block w-100" height="500px" alt="Imagen Buenos Aires1">
-					<div class="carousel-caption d-none d-sm-block text-end">
-						<h2 class="fw-bold">Conferencia Buenos Aires</h2>
-						<p class="fs-6 fw-bold text-light">La conferencia llega por primera vez a Argentina. Un evento para compartir <br>
-							con nuestra comunidad el conocimiento y experiencia de los expertos que <br>
-							estan creando el futuro de internet. Ven a conocer miembros del <br>
-							evento, otros estudiantes de codo a codo y a los oradores de primer <br>
-							nivel que tenemos para ti ¡Te esperamos!</p>
-								<form class="container-fluid justify-content-end">
-									<button class="btn btn-outline-light me-2 fw-semibold" type="button">Quiero ser orador</button>
-									<button class="btn-verde btn btn-success fw-semibold" type="button">Comprar tickets</button>
-								</form>
-					</div>
-				</div>
-				<div class="carousel-item" >
-					<img src="assets/img/ba2.jpg" class="d-block w-100" height="500px" alt="Imagen Buenos Aires2">
-					<div class="carousel-caption d-none d-sm-block text-end">
-						<h2 class="fs-3 fw-bold">Conferencia Buenos Aires</h2>
-						<p class="fs-6 fw-medium">La conferencia llega por primera vez a Argentina. Un evento para compartir <br>
-							con nuestra comunidad el conocimiento y experiencia de los expertos que <br>
-							estan creando el futuro de internet. Ven a conocer miembros del <br>
-							evento, otros estudiantes de codo a codo y a los oradores de primer <br>
-							nivel que tenemos para ti ¡Te esperamos!</p>
-								<form class="container-fluid justify-content-end">
-									<button class="btn btn-outline-light me-2 fw-semibold" type="button">Quiero ser orador</button>
-									<button class="btn btn-verde btn-success fw-semibold" type="button">Comprar tickets</button>
-								</form>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<img src="assets/img/ba3.jpg" class="d-block w-100" height="500px" alt="Imagen Buenos Aires3">
-					<div class="carousel-caption d-none d-sm-block text-end">
-						<h2 class="fs-4 fw-bold">Conferencia Buenos Aires</h2>
-						<p class="fw-medium">La conferencia llega por primera vez a Argentina. Un evento para compartir <br>
-							con nuestra comunidad el conocimiento y experiencia de los expertos que <br>
-							estan creando el futuro de internet. Ven a conocer miembros del <br>
-							evento, otros estudiantes de codo a codo y a los oradores de primer <br>
-							nivel que tenemos para ti ¡Te esperamos!</p>
-								<form class="container-fluid justify-content-end">
-									<button class="btn btn-outline-light me-2 fw-semibold" type="button">Quiero ser orador</button>
-									<button class="btn btn-verde btn-success fw-semibold" type="button">Comprar tickets</button>
-								</form>
-					</div>
+	<!-- Navbar -->
+	<nav id="navbar" class="navbar navbar-expand-md bg-black opacity-75 navbar-main">
+		<div class="container-fluid">
+			<a class="navbar-brand-md text-white d-flex align-items-center text-decoration-none fs-5" href="#">
+				<img id="favicon" class="favicon" src="assets/img/codoacodo.png" alt="Logo">
+				<h2>Conferencia de Buenos Aires</h2>
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+				aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse flex-md-row-reverse fw-normal" id="mainNav">
+				<div class="nav flex-column flex-md-row fw-medium">
+					<a class="nav-link text-white" aria-current="page" href="#">Conferencia</a>
+					<a class="nav-link text-white-50" href="#">Oradores</a>
+					<a class="nav-link text-white-50" href="#">Lugar y fecha</a>
+					<a class="nav-link text-white-50" href="#">Convierte en orador</a>
+					<a class="nav-link comprarVerde fw-semibold" href="assets/html/tickets.html">Comprar tickets</a>
 				</div>
 			</div>
 		</div>
-  <!-- "main" cards de los oradores-->
-  <div class="container-cards container-fluid">
-	<div class="text-cards d-flex align-items-center flex-column p-2">
-		<p class="fs-6 text-dark">Conoce a los</p>
-		<h2 class="fs-2">ORADORES</h2>
-	</div>
-	<div class="row container-oradores d-flex justify-content-center">
-		<div class="card col-md-6 col-lg-4 col-sm-12 col-xl-4" style="width: 18rem;">
-			<img src="assets/img/steve.jpg" class="card-img-top img-fluid" height="286px" alt="Steve Jobs">
-			<div class="card-body">
-				<span class="badge text-bg-warning">Javascript</span>
-				<span class="badge text-bg-info">React</span>
-				<h5 class="card-title p-1">Steve Jobs</h5>
-				<p class="card-text">Steven Paul Jobs &ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;fue un empresario, diseñador industrial, magnate empresarial, propietario de medios e inversor estadounidense. Fue cofundador y presidente ejecutivo de Apple&ZeroWidthSpace; y máximo accionista individual de The Walt Disney Company.&ZeroWidthSpace;</p>
+	</nav>
+	<!-- Carousel -->
+	<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="assets/img/ba1.jpg" class="d-block w-100" height="500px" alt="Imagen Buenos Aires1">
+				<div class="carousel-caption d-none d-sm-block text-end">
+					<h2 class="fw-bold">Conferencia Buenos Aires</h2>
+					<p class="fs-6 fw-bold text-light">La conferencia llega por primera vez a Argentina. Un evento para
+						compartir <br>
+						con nuestra comunidad el conocimiento y experiencia de los expertos que <br>
+						estan creando el futuro de internet. Ven a conocer miembros del <br>
+						evento, otros estudiantes de codo a codo y a los oradores de primer <br>
+						nivel que tenemos para ti ¡Te esperamos!</p>
+					<form class="container-fluid justify-content-end">
+						<button class="btn btn-outline-light me-2 fw-semibold" type="button">Quiero ser orador</button>
+						<a href="assets/html/tickets.html" class="btn-verde btn btn-success fw-semibold" type="button">Comprar tickets</a>
+					</form>
+				</div>
 			</div>
-		</div>
-		<div class="card col-md-6 col-lg-4 col-sm-12 col-xl-4" style="width: 18rem;">
-			<img src="assets/img/bill.jpg" class="card-img-top img-fluid" alt="Steve Jobs">
-			<div class="card-body">
-				<span class="badge text-bg-warning">Javascript</span>
-				<span class="badge text-bg-info">React</span>
-				<h5 class="card-title p-1">Bill Gates</h5>
-				<p class="card-text">William Henry Gates III, conocido como Bill Gates, es un magnate empresarial, desarrollador de software, inversor, autor y filántropo estadounidense. Es cofundador de Microsoft, junto con su difunto amigo de la infancia Paul Allen.</p>
+			<div class="carousel-item">
+				<img src="assets/img/ba2.jpg" class="d-block w-100" height="500px" alt="Imagen Buenos Aires2">
+				<div class="carousel-caption d-none d-sm-block text-end">
+					<h2 class="fs-3 fw-bold">Conferencia Buenos Aires</h2>
+					<p class="fs-6 fw-medium">La conferencia llega por primera vez a Argentina. Un evento para compartir
+						<br>
+						con nuestra comunidad el conocimiento y experiencia de los expertos que <br>
+						estan creando el futuro de internet. Ven a conocer miembros del <br>
+						evento, otros estudiantes de codo a codo y a los oradores de primer <br>
+						nivel que tenemos para ti ¡Te esperamos!
+					</p>
+					<form class="container-fluid justify-content-end">
+						<button class="btn btn-outline-light me-2 fw-semibold" type="button">Quiero ser orador</button>
+						<button class="btn btn-verde btn-success fw-semibold" type="button">Comprar tickets</button>
+					</form>
+				</div>
 			</div>
-		</div>
-		<div class="card col-md-6 col-lg-4 col-sm-12 col-xl-4" style="width: 18rem;">
-			<img src="assets/img/ada.jpeg" class="card-img-top img-fluid" alt="Steve Jobs">
-			<div class="card-body">
-				<span class="badge text-bg-secondary">Negocios</span>
-				<span class="badge text-bg-danger">Startups</span>
-				<h5 class="card-title p-1">Ada Lovelace</h5>
-				<p class="card-text">Augusta Ada King, condesa de Lovelace,conocida habitualmente como Ada Lovelace, fue una matemática y escritora británica, célebre sobre todo por su trabajo acerca de la computadora mecánica de uso general de Charles Babbage, la denominada máquina analítica.</p>
+			<div class="carousel-item">
+				<img src="assets/img/ba3.jpg" class="d-block w-100" height="500px" alt="Imagen Buenos Aires3">
+				<div class="carousel-caption d-none d-sm-block text-end">
+					<h2 class="fs-4 fw-bold">Conferencia Buenos Aires</h2>
+					<p class="fw-medium">La conferencia llega por primera vez a Argentina. Un evento para compartir <br>
+						con nuestra comunidad el conocimiento y experiencia de los expertos que <br>
+						estan creando el futuro de internet. Ven a conocer miembros del <br>
+						evento, otros estudiantes de codo a codo y a los oradores de primer <br>
+						nivel que tenemos para ti ¡Te esperamos!</p>
+					<form class="container-fluid justify-content-end">
+						<button class="btn btn-outline-light me-2 fw-semibold" type="button">Quiero ser orador</button>
+						<button class="btn btn-verde btn-success fw-semibold" type="button">Comprar tickets</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-  <!-- Informacion -->
+	<!-- "main" cards de los oradores-->
+	<div class="container-cards container-fluid">
+		<div class="text-cards d-flex align-items-center flex-column p-2">
+			<p class="fs-6 text-dark">Conoce a los</p>
+			<h2 class="fs-2">ORADORES</h2>
+		</div>
+		<div class="row container-oradores d-flex justify-content-center">
+			<div class="card col-md-6 col-lg-4 col-sm-12 col-xl-4" style="width: 18rem;">
+				<img src="assets/img/steve.jpg" class="card-img-top img-fluid" height="286px" alt="Steve Jobs">
+				<div class="card-body">
+					<span class="badge text-bg-warning">Javascript</span>
+					<span class="badge text-bg-info">React</span>
+					<h5 class="card-title p-1">Steve Jobs</h5>
+					<p class="card-text">Steven Paul Jobs
+						&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;fue un empresario, diseñador
+						industrial, magnate empresarial, propietario de medios e inversor estadounidense. Fue cofundador
+						y presidente ejecutivo de Apple&ZeroWidthSpace; y máximo accionista individual de The Walt
+						Disney Company.&ZeroWidthSpace;</p>
+				</div>
+			</div>
+			<div class="card col-md-6 col-lg-4 col-sm-12 col-xl-4" style="width: 18rem;">
+				<img src="assets/img/bill.jpg" class="card-img-top img-fluid" alt="Steve Jobs">
+				<div class="card-body">
+					<span class="badge text-bg-warning">Javascript</span>
+					<span class="badge text-bg-info">React</span>
+					<h5 class="card-title p-1">Bill Gates</h5>
+					<p class="card-text">William Henry Gates III, conocido como Bill Gates, es un magnate empresarial,
+						desarrollador de software, inversor, autor y filántropo estadounidense. Es cofundador de
+						Microsoft, junto con su difunto amigo de la infancia Paul Allen.</p>
+				</div>
+			</div>
+			<div class="card col-md-6 col-lg-4 col-sm-12 col-xl-4" style="width: 18rem;">
+				<img src="assets/img/ada.jpeg" class="card-img-top img-fluid" alt="Steve Jobs">
+				<div class="card-body">
+					<span class="badge text-bg-secondary">Negocios</span>
+					<span class="badge text-bg-danger">Startups</span>
+					<h5 class="card-title p-1">Ada Lovelace</h5>
+					<p class="card-text">Augusta Ada King, condesa de Lovelace,conocida habitualmente como Ada Lovelace,
+						fue una matemática y escritora británica, célebre sobre todo por su trabajo acerca de la
+						computadora mecánica de uso general de Charles Babbage, la denominada máquina analítica.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Informacion -->
 	<div class="card mb-8">
 		<div class="row g-0">
-					<div class="col-md-6 col-sm-12 d-flex align-items-center">
-						<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-							<div class="carousel-inner">
-								<div class="carousel-item active">
-									<img src="assets/img/hawaii.jpg" class="d-block w-100" height="450px" alt="...">
-								</div>
-								<div class="carousel-item">
-									<img src="assets/img/hawaii2.jpg" class="d-block w-100" height="450px" alt="...">
-								</div>
-								<div class="carousel-item">
-									<img src="assets/img/honolulu.jpg" class="d-block w-100" height="450px" alt="...">
-								</div>
-							</div>
+			<div class="col-md-6 col-sm-12 d-flex align-items-center">
+				<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="assets/img/hawaii.jpg" class="d-block w-100" height="450px" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="assets/img/hawaii2.jpg" class="d-block w-100" height="450px" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="assets/img/honolulu.jpg" class="d-block w-100" height="450px" alt="...">
 						</div>
 					</div>
-					<div class="col-md-6 text-bg-dark">
-						<div class="card-body">
-							<h5 class="card-title m-3">Buenos Aires - Octubre</h5>
-								<p class="card-text fs-6 p-1">
-									En octubre, mientras en Honolulu las suaves brisas acarician las playas de Hawai, en Argentina, el ambiente se llena de entusiasmo por la llegada de la primavera. Mientras los habitantes de Honolulu disfrutan de temperaturas cálidas y días soleados, en Argentina, las jacarandas empiezan a florecer, pintando las calles de un vibrante color violeta.
-									<br> A pesar de la distancia geográfica que separa estos dos lugares, ambos celebran octubre de manera especial. Mientras en Honolulu se organizan festivales culturales y eventos al aire libre, en Argentina, la gente se prepara para el Día de la Madre y el Día de la Lealtad, fechas importantes en su calendario.
-									<br><br> Octubre une a estas dos regiones de formas diferentes, pero ambas celebran la belleza de la vida y la naturaleza en este mes.
-								</p>
-								<button class="btn btn-outline-light mt-2" type="button">Conocé más</button>
-						</div>
-					</div>
+				</div>
+			</div>
+			<div class="col-md-6 text-bg-dark">
+				<div class="card-body">
+					<h5 class="card-title m-3">Buenos Aires - Octubre</h5>
+					<p class="card-text fs-6 p-1">
+						En octubre, mientras en Honolulu las suaves brisas acarician las playas de Hawai, en Argentina,
+						el ambiente se llena de entusiasmo por la llegada de la primavera. Mientras los habitantes de
+						Honolulu disfrutan de temperaturas cálidas y días soleados, en Argentina, las jacarandas
+						empiezan a florecer, pintando las calles de un vibrante color violeta.
+						<br> A pesar de la distancia geográfica que separa estos dos lugares, ambos celebran octubre de
+						manera especial. Mientras en Honolulu se organizan festivales culturales y eventos al aire
+						libre, en Argentina, la gente se prepara para el Día de la Madre y el Día de la Lealtad, fechas
+						importantes en su calendario.
+						<br><br> Octubre une a estas dos regiones de formas diferentes, pero ambas celebran la belleza
+						de la vida y la naturaleza en este mes.
+					</p>
+					<button class="btn btn-outline-light mt-2" type="button">Conocé más</button>
+				</div>
+			</div>
 		</div>
 	</div>
-  <!-- Formulario -->
-<div class="container-fluid">
-			<div class="d-flex align-items-center flex-column p-2">
-				<p class="fs-6 text-dark">CONVIÉRTETE EN UN</p>
-				<h2 class="fs-2">ORADOR</h2>
-				<p>Anótate como orador para dar una <abbr title="El formato Ignite consiste en una presentación de la idea central de un proyecto o visión en cinco minutos." class="initialism text-lowercase">charla ignite</abbr>. ¡Cuéntanos de que quieres hablar!</p>
+	<!-- Formulario -->
+	<div class="container-fluid">
+		<div class="d-flex align-items-center flex-column p-2">
+			<p class="fs-6 text-dark">CONVIÉRTETE EN UN</p>
+			<h2 class="fs-2">ORADOR</h2>
+			<p>Anótate como orador para dar una <abbr
+					title="El formato Ignite consiste en una presentación de la idea central de un proyecto o visión en cinco minutos."
+					class="initialism text-lowercase">charla ignite</abbr>. ¡Cuéntanos de que quieres hablar!</p>
+		</div>
+		<form class="form">
+			<div class="container d-flex justify-content-center gap-5 p-2 w-50">
+				<input type="text" class="form-control" placeholder="Nombre" id="Nombre">
+				<input type="text" class="form-control" placeholder="Apellido" id="Apellido">
 			</div>
-	<form class="form">
-		<div class="container d-flex justify-content-center gap-5 p-2 w-50">
-			<input type="text" class="form-control" placeholder="Nombre" id="Nombre" >
-			<input type="text" class="form-control" placeholder="Apellido" id="Apellido">
-		</div>
-		<div class="container d-flex justify-content-center p-2 w-50">
-			<textarea class="form-control fs-3" id="exampleFormControlTextarea1" placeholder="¿Sobre qué quieres hablar?" rows="3"></textarea>
-		</div>
-		<div class="container justify-content-start w-50">
-			<p class="fs-6">Recuerda incluir un titulo para tu charla</p>
-		</div>
+			<div class="container d-flex justify-content-center p-2 w-50">
+				<textarea class="form-control fs-3" id="exampleFormControlTextarea1"
+					placeholder="¿Sobre qué quieres hablar?" rows="3"></textarea>
+			</div>
+			<div class="container justify-content-start w-50">
+				<p class="fs-6">Recuerda incluir un titulo para tu charla</p>
+			</div>
 			<div class="container d-grid gap-2 mb-4 w-50">
 				<button class="buttom-form btn " type="button">Enviar</button>
-		</div>
-	</form>
-</div>
-  <!-- Footer -->
+			</div>
+		</form>
+	</div>
+	<!-- Footer -->
 	<footer class="footer container-fluid d-flex p-3 mt-2 justify-content-center">
-    <ul class="nav p-2 d-flex gap-5">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Preguntas <br> frecuentes</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contáctanos</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Prensa</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Conferencia</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Términos y <br> condiciones</a></li>
+		<ul class="nav p-2 d-flex gap-5">
+			<li class="nav-item"><a href="#" class="nav-link px-2 text-white">Preguntas <br> frecuentes</a></li>
+			<li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contáctanos</a></li>
+			<li class="nav-item"><a href="#" class="nav-link px-2 text-white">Prensa</a></li>
+			<li class="nav-item"><a href="#" class="nav-link px-2 text-white">Conferencia</a></li>
+			<li class="nav-item"><a href="#" class="nav-link px-2 text-white">Términos y <br> condiciones</a></li>
 			<li class="nav-item"><a href="#" class="nav-link px-2 text-white">Privacidad</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Estudiantes</a></li>
+			<li class="nav-item"><a href="#" class="nav-link px-2 text-white">Estudiantes</a></li>
 		</ul>
-  </footer>  
-  	<!-- Link js de bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
-</html>
+	</footer>
+	<!-- Link js de bootstrap-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
 
+	<!-- link al js con las funciones -->
+	<script src="assets/js/tickets.js"></script>
+</body>
+
+</html>
