@@ -94,7 +94,8 @@
 			<div class="container d-flex justify-content-center p-2 w-50">
 				<input type="email" class="form-control" placeholder="Correo" id="Email">
 			</div>
-			<div class="container d-flex justify-content-start gap-5 p-2 w-50">
+			<!--
+				<div class="container d-flex justify-content-start gap-5 p-2 w-50">
 				<label for="Cantidad">Cantidad:</label>
 				<label for="Categoria">Categoria:</label>
 			</div>
@@ -109,7 +110,35 @@
 			</div>
 			<div class="container d-grid gap-2 mb-4 w-50">
 				<button class="buttom-form btn " type="button">Enviar</button>
+			</div>-->
+			<div class="container d-flex justify-content-start gap-4 p-2 w-50">
+				<div class="col-6 gap-2">
+					<label for="Cantidad">Cantidad:</label>
+				</div>
+				<div class="col-6">
+					<label for="Categoria">Categoria:</label>
+				</div>
 			</div>
+			<div class="container d-flex justify-content-center gap-5 p-2 w-50">
+				<div class="col-6">
+					<input type="text" id="cantidadTickets" class="form-control" placeholder="Cantidad">
+				</div>
+				<div class="col-6"><select id="categoriaTickets" class="form-select" aria-label="Default select example">
+						<option selected>Categoria</option>
+						<option value="0.20">Estudiante</option>
+						<option value="0.5">Trainee</option>
+						<option value="0.85">Junior</option>
+					</select>
+				</div>
+			</div>
+			<div class="container d-flex justify-content-start gap-4 p-2 w-50 total_a_pagar">
+				<p id="parrafoTotal">Total a Pagar: $</p>
+			</div>
+			<div class="container d-flex justify-content-center gap-0 p-2 w-50">
+				<div class="col-6 gap-2"><button class="btn-verde" type="reset">Borrar</button></div>
+				<div class="col-6 gap-2"><button id="calcularTotal" class="btn-verde" type="button">Enviar</button></div>
+			</div>
+	
 		</form>
 	</div>
 	<!-- Footer -->
@@ -124,6 +153,7 @@
 			<li class="nav-item"><a href="#" class="nav-link px-2 text-white">Estudiantes</a></li>
 		</ul>
 	</footer>
+	<script src="../js/tickets.js"></script>
 </body>
 
 </html>
