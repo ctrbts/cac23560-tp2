@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 	<!--Metadatos-->
 	<meta charset="UTF-8">
 	<meta name="author" content="Codo a Codo, Comision 23560, Grupo 14">
-	<meta name="description"
-		content="Pagina de una conferencia en buenos aires a modo de ejemplo como final integrador frontend de codo a codo">
+	<meta name="description" content="Pagina de una conferencia en buenos aires a modo de ejemplo como final integrador frontend de codo a codo">
 	<meta name="keywords" content="HTML, CSS, Bootstrap, Conferencia, Buenos Aires, Argentina, Ejercicio, Frontend">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- bootstrap -->
@@ -37,7 +36,7 @@
 			</button>
 			<div class="collapse navbar-collapse flex-md-row-reverse fw-normal" id="mainNav">
 				<div class="nav flex-column flex-md-row fw-medium">
-					<a class="nav-link text-white" aria-current="page" href="/">Inicio</a>
+					<a class="nav-link text-white" aria-current="page" href="../../index.html">Inicio</a>
 					<a class="nav-link comprarVerde fw-semibold" href="#">Comprar tickets</a>
 				</div>
 			</div>
@@ -77,50 +76,45 @@
 	</div>
 
 	<!-- Formulario -->
-
-	<div class="container-fluid">
-		<div class="d-flex align-items-center flex-column p-2">
-			<p class="fs-6 text-dark">VENTA</p>
-			<h2 class="fs-2">VALOR DE TICKET $200</h2>
-		</div>
-		<form class="form">
-			<div class="container d-flex justify-content-center gap-3 p-2 w-50">
-				<input type="text" class="form-control" placeholder="Nombre" id="Nombre">
-				<input type="text" class="form-control" placeholder="Apellido" id="Apellido">
-			</div>
-			<div class="container d-flex justify-content-center p-2 w-50">
-				<input type="email" class="form-control" placeholder="Correo" id="Email">
-			</div>
-			<div class="container d-flex justify-content-start gap-4 p-2 w-50">
-				<div class="col-6 gap-2">
-					<label for="Cantidad">Cantidad:</label>
-				</div>
-				<div class="col-6">
-					<label for="Categoria">Categoria:</label>
-				</div>
-			</div>
-			<div class="container d-flex justify-content-center gap-5 p-2 w-50">
-				<div class="col-6">
-					<input type="text" id="cantidadTickets" class="form-control" placeholder="Cantidad">
-				</div>
-				<div class="col-6"><select id="categoriaTickets" class="form-select" aria-label="Default select example">
-						<option selected>Categoria</option>
-						<option value="0.20">Estudiante</option>
-						<option value="0.5">Trainee</option>
-						<option value="0.85">Junior</option>
-					</select>
-				</div>
-			</div>
-			<div class="container d-flex justify-content-start gap-4 p-2 w-50 total_a_pagar">
-				<p id="parrafoTotal">Total a Pagar: $</p>
-			</div>
-			<div class="container d-flex justify-content-center gap-0 p-2 w-50">
-				<div class="col-6 gap-2"><button class="btn-verde" type="reset">Borrar</button></div>
-				<div class="col-6 gap-2"><button id="calcularTotal" class="btn-verde" type="button">Enviar</button></div>
-			</div>
-	
-		</form>
+	<div class="container d-flex align-items-center flex-column p-5">
+		<p class="fs-6 text-dark">VENTA</p>
+		<h2 class="fs-2">VALOR DE TICKET $200</h2>
 	</div>
+
+	<form class="form">
+		<div class="container d-flex justify-content-center gap-3 p-2 w-50">
+			<input type="text" class="form-control" placeholder="Nombre" id="Nombre">
+			<input type="text" class="form-control" placeholder="Apellido" id="Apellido">
+		</div>
+		<div class="container d-flex justify-content-center p-2 w-50">
+			<input type="email" class="form-control" placeholder="Correo" id="Email">
+		</div>
+
+		<div class="container d-flex justify-content-start gap-3 p-2 w-50">
+			<div class="col-6">
+				<label for="Cantidad">Cantidad:</label>
+				<input type="text" id="cantidadTickets" class="form-control" placeholder="Cantidad">
+			</div>
+			<div class="col-6">
+				<label for="Categoria">Categoria:</label>
+				<select id="categoriaTickets" class="form-select" aria-label="Default select example">
+					<option selected>Categoria</option>
+					<option value="0.20">Estudiante</option>
+					<option value="0.5">Trainee</option>
+					<option value="0.85">Junior</option>
+				</select>
+			</div>
+		</div>
+		<div class="container d-flex justify-content-start gap-4 p-2 w-50 total_a_pagar">
+			<p id="parrafoTotal">Total a Pagar: $</p>
+		</div>
+		<div class="container d-flex justify-content-center gap-0 p-2 w-50">
+			<div class="col-6 gap-2"><button class="btn-verde" type="reset">Borrar</button></div>
+			<div class="col-6 gap-2"><button id="calcularTotal" class="btn-verde" type="button">Enviar</button></div>
+		</div>
+
+	</form>
+
 	<!-- Footer -->
 	<footer class="footer container-fluid d-flex p-3 mt-2 justify-content-center">
 		<ul class="nav p-2 d-flex gap-5">

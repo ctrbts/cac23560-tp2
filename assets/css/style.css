@@ -44,15 +44,24 @@
 
 }
 
-/* Formulario */ 
+/* Formulario */
 .buttom-form {
+    color: white;
     background-color: #96C93E;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
 }
+
+.buttom-form:hover {
+    color: white;
+    background-color: #96C93E;
+    box-shadow: 2px 2px 20px 10px rgba(0,0,0,0.2);
+}
+
 /* Footer */
 
 .footer {
-    background: rgb(28,56,70);
-background: linear-gradient(90deg, rgba(28,56,70,0.9528186274509804) 3%, rgba(29,73,98,1) 25%, rgba(29,67,88,1) 95%);
+    background: rgb(28, 56, 70);
+    background: linear-gradient(90deg, rgba(28, 56, 70, 0.9528186274509804) 3%, rgba(29, 73, 98, 1) 25%, rgba(29, 67, 88, 1) 95%);
 }
 
 /* M Q */
