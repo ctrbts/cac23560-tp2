@@ -8,27 +8,35 @@ function calcula_importe() {
 
 const btn = document.getElementById('calcularTotal');
 btn.addEventListener('click', calcTotal);
+const btnBorrar = document.getElementById('borrarForm');
+btnBorrar.addEventListener('click', borrarForm);
+
+
 
 function calcTotal() {
 
     if (validarFaltanDatos()){
-        alert('Debe Completar los campos del formulario'); 
+        alert('Debe Completar correctamente los campos del formulario'); 
         return 'Error';
     }
     const valorTicket = 200;
     const cant = document.getElementById('cantidadTickets');
     const cate = document.getElementById('categoriaTickets');
-    const totalImprimir = document.getElementById('parrafoTotal');
-    
-    
-    let descuento = 1
+    const totalImprimir = document.getElementById('parrafoTotal');let descuento = 1
     let cantidad = 0
     let total = 0;
     cantidad = (cant.value > 0) ? cant.value : 0;    
     descuento = (cate.value > 0) ? cate.value : 1;
     total = cantidad * valorTicket * descuento;
-    
+
     totalImprimir.innerText = 'Total a Pagar: $ ' + total;
+}
+
+function borrarForm(){
+    document.getElementById("formTickets").reset();
+    const totalImprimir = document.getElementById('parrafoTotal');let descuento = 1
+    totalImprimir.innerText = 'Total a Pagar: $ ';
+    
 }
 
 function validarFaltanDatos(){
@@ -42,7 +50,11 @@ function validarFaltanDatos(){
 
 function validarCantidad(){
     const cant = document.getElementById('cantidadTickets');
-    if(cant.value==''){
+    if (cant.value==''){
+        return true;
+    }
+    if (isNaN(cant.value)){
+        alert('La cantidad debe ser numerica')
         return true;
     }
 }
